@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To do list</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/todolist.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/todolist.js"></script>
+</head>	
+<body>
+<div id="header">
+	<h1><center>CSE 15-1 Internet Programming</center></h1>
+	<input class="item form-control" id="text-box" type="text" placeholder="write to-do list assignment" name="search_item" >
+	<button id="add_to_bottom" disabled class="item btn btn-success">Add to Bottom</button>
+	<button id="delete_from_top" class="item item btn btn-danger">Delete Top Item</button>
+</div>
+<br>
+<div class="container well">
+	<legend>To-Do Items:</legend>
+	<ol id="list">
+		<li>Loading...<a style="display: none;" class='item-edit' href='#'><span class='glyphicon glyphicon-pencil'></span></a></li>
+	</ol>
+</div>
+
+</body>
+</html>

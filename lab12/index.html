@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+</head>
+<body>
+<button title="hello world">Save</button>
+<canvas id="canvas" width="500" style="border:1px solid;" height="500"></canvas>
+<script type="text/javascript">
+	window.onload=function(){
+		// y=ax+b
+
+		var c=document.getElementById("canvas");
+		var context=c.getContext("2d");
+		context.strokeStyle="#000";
+		context.fillStyle="#fff";
+		
+		var a=43, b=42;
+
+		context.beginPath();
+		context.moveTo(0,0);/*
+		context.lineTo(200,200);
+		context.moveTo(200,200);
+		context.lineTo(400,400);*/
+		
+		for(var x=0; x<500; x++){
+			context.lineTo(x*5,500-x);
+			//context.moveTo(x*100,x);	
+		}
+		//context.lineTo(20,20);
+		//context.lineTo(40,50);
+
+		context.closePath()
+
+		context.stroke()
+		//context.fill()
+	}
+</script>
+</body>
+</html>
